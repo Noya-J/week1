@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "LinkedList.h"
 #include <iostream>
+#include "LinkedList.h"
 
 using namespace std;
 
 int main() 
 {
+    //Node* head = NULL;
     
     // Insert element at the beginning
-    Node_add_to_top(5);
-    Node_add_to_top(6);
     Node_add_to_top(7);
+    Node_add_to_top(6);
+    Node_add_to_top(5);
 
     std::cout << "Linked list after insertions: ";
     display();

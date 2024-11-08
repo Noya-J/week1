@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <iostream>
 #include "LinkedList.h"
+#include <iostream>
+
+using namespace std;
+
 
 static struct Node* head = NULL;
 static struct Node* last = NULL;
@@ -59,11 +62,12 @@ int Node_remove_head_item()
 	Node* next = head->next;
 	delete head;
 	head = next;
-	//head->prev = NULL;
+	head->prev = NULL;
 	Node_count--;
 	return 1;
 }
 
+// Function to print the nodes of  the linked list
 void display()
 {
 	if (!head)
@@ -80,3 +84,4 @@ void display()
 	}
 	std::cout << "NULL" << std::endl;
 }
+

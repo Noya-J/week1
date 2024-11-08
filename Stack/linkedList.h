@@ -23,8 +23,8 @@ int Node_add_to_top(int item);
 // returns 1 if successes, 0 if failed
 int Node_remove_head_item();
 
+// display the LinkedList
 void display();
-
 
 #endif /* LINKLIST.H */
 
